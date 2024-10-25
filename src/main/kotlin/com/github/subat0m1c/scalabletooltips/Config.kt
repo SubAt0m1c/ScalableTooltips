@@ -23,7 +23,6 @@ object Config {
             config.load()
             toggled.value = toggled.set(toggled.value)
             scale.value = scale.set(scale.value)
-            println("LOADING CONFIGUHRGHHGHAHGHHAGHABG ${toggled.value}, ${scale.value}")
         } catch (e: Exception) {
             System.err.println("Failed to load config file!")
         } finally {
