@@ -1,16 +1,16 @@
 [
   {
     "modid": "${modid}",
-    "name": "Xample Mod",
-    "description": "A mod that is used as an example.",
+    "name": "ScrollableTooltips",
+    "description": "The best tooltips mod.",
     "version": "${version}",
     "mcversion": "${mcversion}",
-    "url": "https://github.com/romangraef/Forge1.8.9Template/",
+    "url": "",
     "updateUrl": "",
     "authorList": [
-      "You"
+      "SubAt0mic"
     ],
-    "credits": "",
+    "credits": "Dulkir, basically created the whole thing.",
     "logoFile": "",
     "screenshots": [],
     "dependencies": []
