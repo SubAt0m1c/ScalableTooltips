@@ -1,5 +1,6 @@
 package com.github.subat0m1c.scalabletooltips.impl
 
+import com.github.subat0m1c.scalabletooltips.Config
 import net.minecraft.client.Minecraft
 import net.minecraft.client.gui.FontRenderer
 import net.minecraft.client.gui.GuiChat
@@ -28,7 +29,7 @@ object ScalableTooltips {
         screenHeight: Int,
         font: FontRenderer,
     ): Boolean {
-        //enabled hceck
+        if (!Config.toggled.value) return false
         if(textLines.isEmpty()) return true
 
         // Calculate the amount of translation that should be applied based on how much the user has scrolled
@@ -59,8 +60,7 @@ object ScalableTooltips {
             }
         }
 
-        //scale here
-        val scale = (0.8f + scaleScale).coerceAtLeast(0f)
+        val scale = (Config.scale.value + scaleScale).coerceAtLeast(0f)
 
         // Calculate the width and height of the tooltip box
         var width = 0
